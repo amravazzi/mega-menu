@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="compiled.css">
+</head>
+
+<body>
+  <nav id="nav">
+    <div>
+      <ul id="menu1a" class="is-visible">
+        <li id="close-nav">x</li>
+        <li aria-controls="menu2a"><span>&gt;</span><span class="text">Open menu2a</span><span>&gt;</span></li>
+        <li aria-controls="menu2b">Open menu2b</li>
+      </ul>
+    </div>
+    <div>
+      <ul id="menu2a">
+        <li class="close-btn">x</li>
+        <li aria-controls="menu3a">Open menu3a</li>
+        <li aria-controls="menu3b">Open menu3b</li>
+      </ul>
+      <ul id="menu2b">
+        <li class="close-btn">x</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ul>
+    </div>
+    <div>
+      <ul id="menu3a">
+        <li class="close-btn">x</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Voluptates eaque quis, nisi non.</li>
+      </ul>
+      <ul id="menu3b">
+        <li class="close-btn">x</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Officiis recusandae ipsum, ea quod.</li>
+      </ul>
+    </div>
+  </nav>
+  <div id="open-nav">Hamburguer Menu</div>
+
+  <script src="index.js"></script>
+  <script>
+    // for (A of document.querySelectorAll('*')) A.style.outline = `solid hsl(${(A + A).length * 9},99%,50%)1px`
+  </script>
+</body>
+
+</html>
